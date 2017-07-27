@@ -16,7 +16,7 @@ class LanguagePack::Ruby < LanguagePack::Base
   NAME                 = "ruby"
   LIBYAML_VERSION      = "0.1.7"
   LIBYAML_PATH         = "libyaml-#{LIBYAML_VERSION}"
-  BUNDLER_VERSION      = "1.15.1"
+  BUNDLER_VERSION      = "1.15.2"
   BUNDLER_GEM_PATH     = "bundler-#{BUNDLER_VERSION}"
   RBX_BASE_URL         = "http://binaries.rubini.us/heroku"
   NODE_BP_PATH         = "vendor/node/bin"
@@ -290,6 +290,7 @@ EOF
 echo #{default_java_mem}
 SHELL
         ENV["JRUBY_OPTS"] = env('JRUBY_BUILD_OPTS') || env('JRUBY_OPTS')
+        ENV["JAVA_HOME"] = @jvm_installer.java_home
       end
       setup_ruby_install_env
       ENV["PATH"] += ":#{node_preinstall_bin_path}" if node_js_installed?

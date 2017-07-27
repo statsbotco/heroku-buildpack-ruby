@@ -1,5 +1,22 @@
 ## Master
 
+## v167 (07/25/2016)
+
+* Update Bundler to 1.15.2 (#602)
+
+## v166 (07/11/2017)
+
+* no changes from v165
+
+## v165 (07/11/2017)
+
+* Set `$JAVA_HOME` for JRuby apps during build (#593)
+* Update Node to 6.11.1 (#598)
+
+## v164 (06/21/2017)
+
+* Update Bundler to 1.15.1 (#579)
+
 ## v163 (05/22/2017)
 
 * Fix CI rake tasks not running (#571)
